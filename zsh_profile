@@ -6,3 +6,4 @@ mkcd() { mkdir -p "$@" && cd "$@"; } # mkdir and cd: https://gist.github.com/bri
 alias path='readlink -f' # find the absolute path
 bindkey '^[[3~' delete-char # make delete work
 export EDITOR='code -w' # use vscode as default editor
+
