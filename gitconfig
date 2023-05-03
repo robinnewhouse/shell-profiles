@@ -1,0 +1,44 @@
+[user]
+	email = robinnew@amazon.com
+	name = Robin Newhouse
+[color]
+	ui = auto
+[core]
+	pager = less -FMRiX
+	excludesfile = /home/robinnew/.gitignore_aws
+[push]
+	default = simple
+[alias]
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+	adog = log --all --decorate --oneline --graph
+	nuke = clean -xdf
+	rv = remote -v
+	co = checkout
+        ci = commit
+        st = status
+        s = status
+        br = branch
+        bv = branch -vv
+        last = log -1 HEAD
+        amend = commit --amend
+        lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+        diff = diff --color
+        dc = diff --cached
+        di = diff
+        d = diff
+        aa = add --all
+        au = add -u
+        unstage = reset HEAD --
+        ci = commit
+        ca = commit -a
+        cp = cherry-pick
+        rb = rebase
+        rbi = rebase --interactive
+        b = branch
+        l = log --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+        subs = submodule update --init --recursive
+[pull]
+        rebase = true
+[rebase]
+        autoSquash = true
+        autoStash = true
