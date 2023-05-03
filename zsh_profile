@@ -1,0 +1,8 @@
+# ============================================================
+# Robin's aliases
+alias l='ls -lhrt' # this should be default everywhere
+alias la='l -a' # so should this
+mkcd() { mkdir -p "$@" && cd "$@"; } # mkdir and cd: https://gist.github.com/briansorahan/6779960
+alias path='readlink -f' # find the absolute path
+bindkey '^[[3~' delete-char # make delete work
+export EDITOR='code -w' # use vscode as default editor
